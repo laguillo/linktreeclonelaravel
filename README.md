@@ -1,5 +1,6 @@
 # El Rincon de Isma
-## Clon de Linktree with admin panel
+### Clon de Linktree with admin panel
+## Screenshots
 ## Code
 ``` bash
 unzip elrincondeismaClonLink.zip
