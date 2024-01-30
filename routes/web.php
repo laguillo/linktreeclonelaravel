@@ -15,6 +15,9 @@ use App\Http\Controllers\PrivateController;
 */
 
 Route::get('/', [HomeController::class,'index']);
+Route::get('/admin', [PrivateController::class,'index'])->name('bio');
+Route::get('/socialmedia', [PrivateController::class,'socialmedia'])->name('socialmedia');
+Route::get('/seo', [PrivateController::class,'seo'])->name('seo');
 
 Route::view('dashboard', 'dashboard')
     ->middleware(['auth', 'verified'])
