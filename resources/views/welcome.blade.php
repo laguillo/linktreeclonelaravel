@@ -18,11 +18,11 @@
             <div class="">
               <!-- User Profile Picture -->
               <div class="max-w-sm h-auto mx-auto my-20 rounded-sm overflow-hidden shadow-lg bg-mirage-500">
-                <img class="object-cover rounded-full h-48 w-48 mx-auto mt-8 p-1 border-4 border-white" src="https://elrincondeisma.com/images/avatar.jpeg" alt="El Rincon de Isma" />
+                <img class="object-cover rounded-full h-48 w-48 mx-auto mt-8 p-1 border-4 border-white" src="{{ $avatar ?? 'https://i.blogs.es/ceda9c/dalle/1366_2000.jpg' }}" alt="El Rincon de Isma" />
                 <div class="px-6 py-4 text-white">
                   <div class="flex flex-col">
-                    <div class="font-bold text-xl text-center hover:cursor-pointer">@elrincondeisma</div>
-                    <p class="text-sm text-center">👨‍🏫 Trainer 📹 Youtuber 👨‍💻 Developer 🎮 Gamer</p>
+                    <div class="font-bold text-xl text-center hover:cursor-pointer">{{ $bio->title }}</div>
+                    <p class="text-sm text-center">{{ $bio->description }}</p>
                   </div>
                 </div>
                 <!-- Social Media Links -->
