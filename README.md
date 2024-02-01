@@ -1,6 +1,6 @@
 ### Clon de Linktree with admin panel
 ## Screenshots
-![LinktreeCloneLaravel](./screens/linktreeclone.png)
+![LinktreeCloneLaravel](./docs/screens/linktreeclone.png)
 
 ## Code
 ``` bash
