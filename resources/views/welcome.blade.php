@@ -35,7 +35,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="bg-gray-600 antialiased">
+<body class="bg-gray-800 antialiased">
     <div class="mx-5">
         <div class="">
             <!-- User Profile Picture -->
@@ -53,7 +53,7 @@
                     @if (isset($social->url))
                         <div class="text-mirage-500 mx-auto flex flex-col">
                             <a href="{{ $social->url }}" target="__blank"
-                                class="{{ $social->color }} mx-auto my-2 flex w-3/4 flex-row rounded-md py-2 pl-2 text-xl text-white">
+                                class="{{ $social->color }} mx-auto my-2 flex w-3/4 flex-row rounded-lg py-2 pl-2 text-xl text-white">
                                 <div class="mx-auto flex flex-row">
                                     {!! Blade::render($social->icon) !!}
                                     <h4 class="mx-5 my-auto font-semibold">{{ $social->social }}</h4>
@@ -71,8 +71,8 @@
                   </a>
                 </div> --}}
                 <!-- Footer -->
-                <div class="mb-4 mt-12 text-center text-xs text-white">Built by <a href="https://elrincondeisma.com"
-                        target="__blank" class="border-b-2 border-b-purple-500"> ElRinconDeIsma</a></div>
+                <div class="mb-4 mt-12 text-center text-xs text-white">Built by <a href="https://github.com/laguillo"
+                        target="__blank" class="border-b-2 border-b-purple-500"> Eduardo Lago</a></div>
             </div>
         </div>
     </div>
