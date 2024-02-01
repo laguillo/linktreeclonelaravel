@@ -23,12 +23,27 @@ new class extends Component
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}" wire:navigate>
+                    <a href="{{ route('bio') }}" wire:navigate>
                         <x-application-logo class="block h-9 w-auto fill-current text-gray-800" />
                     </a>
                 </div>
 
-
+                <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('bio')" :active="request()->routeIs('bio')">
+                        {{ __('Bio') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('socialmedia')" :active="request()->routeIs('socialmedia')">
+                        {{ __('Social Media') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-nav-link :href="route('seo')" :active="request()->routeIs('seo')">
+                        {{ __('Seo Metadata') }}
+                    </x-nav-link>
+                </div>
             </div>
 
             <!-- Settings Dropdown -->
@@ -76,10 +91,17 @@ new class extends Component
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')" wire:navigate>
-                {{ __('Dashboard') }}
+            <x-responsive-nav-link :href="route('bio')" :active="request()->routeIs('bio')" wire:navigate>
+                {{ __('Bio') }}
             </x-responsive-nav-link>
 
+            <x-responsive-nav-link :href="route('socialmedia')" :active="request()->routeIs('socialmedia')" wire:navigate>
+                {{ __('Social Media') }}
+            </x-responsive-nav-link>
+
+            <x-responsive-nav-link :href="route('seo')" :active="request()->routeIs('seo')" wire:navigate>
+                {{ __('Seo Metadata') }}
+            </x-responsive-nav-link>
         </div>
 
         <!-- Responsive Settings Options -->

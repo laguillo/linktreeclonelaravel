@@ -16,7 +16,8 @@ class HomeController extends Controller
         return view('welcome',[
             'bio' => $bio,
             'socials'=>$socials,
-            'seo'=>$seo
+            'seo'=>$seo,
+            'avatar'=>$bio->avatar
         ]);
     }
 }
