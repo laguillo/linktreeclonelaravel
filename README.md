@@ -1,13 +1,14 @@
-# El Rincon de Isma
 ### Clon de Linktree with admin panel
 ## Screenshots
-![LinktreeCloneLaravelElrincondeisma](./screens/linktreeclone.png)
+![LinktreeCloneLaravel](./screens/linktreeclone.png)
 
 ## Code
 ``` bash
-unzip elrincondeismaClonLink.zip
-cd elrincondeismaClonLink
+composer install
+npm install
 php artisan migrate
+npm run dev
+php artisan serve
 ```
 Don't forget to change the name of your app in the .env file
 
