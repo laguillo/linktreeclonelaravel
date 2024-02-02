@@ -34,9 +34,9 @@ return new class extends Migration
             "active" => true
         ]);
         DB::table('social_media')->insert([
-            "social" => "X",
+            "social" => "X (Twitter)",
             "icon" =>'<x-fab-x-twitter class="w-6 h-6" />',
-            "color"=>"bg-blue-400",
+            "color"=>"bg-gray-800",
             "active" => true
         ]);
         DB::table('social_media')->insert([
