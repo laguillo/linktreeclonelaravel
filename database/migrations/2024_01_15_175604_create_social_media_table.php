@@ -18,54 +18,54 @@ return new class extends Migration
             $table->text('icon')->nullable();
             $table->text('color')->nullable();
             $table->text('url')->nullable();
-            $table->boolean('active')->nullable();
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
         DB::table('social_media')->insert([
             "social" => "Youtube",
-            "icon" =>'<x-bi-youtube class="w-8 h-8" />',
+            "icon" =>'<x-bi-youtube class="size-8" />',
             "color"=>"bg-red-500",
             "active" => true
         ]);
         DB::table('social_media')->insert([
             "social" => "Instagram",
-            "icon" =>'<x-bi-instagram class="w-8 h-8" />',
+            "icon" =>'<x-bi-instagram class="size-8" />',
             "color"=>"bg-gradient-to-r from-purple-600 to-orange-500",
             "active" => true
         ]);
         DB::table('social_media')->insert([
             "social" => "Twitter",
-            "icon" =>'<x-bi-twitter class="w-8 h-8" />',
+            "icon" =>'<x-bi-twitter class="size-8" />',
             "color"=>"bg-blue-400",
             "active" => true
         ]);
         DB::table('social_media')->insert([
             "social" => "Facebook",
-            "icon" =>'<x-bi-facebook class="w-8 h-8" />',
+            "icon" =>'<x-bi-facebook class="size-8" />',
             "color"=>"bg-blue-800",
             "active" => true
         ]);
         DB::table('social_media')->insert([
             "social" => "Github",
-            "icon" =>'<x-bi-github class="w-8 h-8" />',
+            "icon" =>'<x-bi-github class="size-8" />',
             "color"=>"bg-gray-700",
             "active" => true
         ]);
         DB::table('social_media')->insert([
             "social" => "Twitch",
-            "icon" =>'<x-bi-twitch class="w-8 h-8" />',
+            "icon" =>'<x-bi-twitch class="size-8" />',
             "color"=>"bg-purple-600",
             "active" => true
         ]);
         DB::table('social_media')->insert([
             "social" => "Discord",
-            "icon" =>'<x-bi-discord class="w-8 h-8" />',
+            "icon" =>'<x-bi-discord class="size-8" />',
             "color"=>"bg-blue-700",
             "active" => true
         ]);
         DB::table('social_media')->insert([
             "social" => "Tiktok",
-            "icon" =>'<x-bi-tiktok class="w-8 h-8" />',
+            "icon" =>'<x-bi-tiktok class="size-8" />',
             "color"=>"bg-black",
             "active" => true
         ]);

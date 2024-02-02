@@ -20,8 +20,8 @@ return new class extends Migration
             $table->timestamps();
         });
         DB::table('bios')->insert([
-            "title" => "Admin",
-            "description" => "admin@admin.com",
+            "title" => "Demo User",
+            "description" => "demo@demo.com",
             "avatar" => "https://www.w3schools.com/howto/img_avatar.png"
         ]);
     }

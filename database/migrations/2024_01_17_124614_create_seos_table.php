@@ -21,8 +21,8 @@ return new class extends Migration
             $table->timestamps();
         });
         DB::table('seos')->insert([
-            "title" => "El rincon de isma",
-            "description" => "El Rincon de isma",
+            "title" => "Título para SEO",
+            "description" => "Descripción para SEO",
         ]);
     }
 

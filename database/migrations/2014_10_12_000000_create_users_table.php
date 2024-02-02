@@ -21,11 +21,11 @@ return new class extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
-        DB::table('users')->insert([
-            "name" => "Admin",
-            "email" => "admin@admin.com",
-            "password" => Hash::make("password")
-        ]);
+        // DB::table('users')->insert([
+        //     "name" => "Demo User",
+        //     "email" => "demo@demo.com",
+        //     "123123" => Hash::make("password")
+        // ]);
     }
 
     /**
