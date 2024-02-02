@@ -51,7 +51,6 @@
                         <p class="text-center text-sm">{{ $bio->description }}</p>
                     </div>
                 </div>
-                <x-fab-x-twitter />
                 <!-- Social Media Links -->
                 @foreach ($socials as $social)
                     @if (isset($social->url))
