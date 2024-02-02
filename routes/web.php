@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\PrivateController;
+use App\Livewire\Pages\MyLinkTree;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +16,8 @@ use App\Http\Controllers\PrivateController;
 |
 */
 
-Route::get('/', [HomeController::class,'index']);
+Route::get('/', MyLinkTree::class);
+// Route::get('/', [HomeController::class,'index']);
 Route::get('/admin', [PrivateController::class,'index'])->name('bio');
 Route::get('/socialmedia', [PrivateController::class,'socialmedia'])->name('socialmedia');
 Route::get('/seo', [PrivateController::class,'seo'])->name('seo');
